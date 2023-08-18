@@ -4,10 +4,10 @@
     box-sizing: border-box;
 }
 
+
 .container{
     width: 100vw;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 32px 64px;
@@ -20,9 +20,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 28px 64px;
+    padding: 28px;
     font-size: 24px;
-    font-family: 'Heebo', sans-serif;
 }
 input{
     height: 26px;
@@ -50,4 +49,49 @@ input{
 button{
     padding: 4px;
     background-color: white;
+}
+
+/*//////////////////////////////////////*/
+
+.container-atv{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 64px;
+    gap: 16px;
+}
+.media{
+    height: 32px;
+    width: 100px;
+    background-color: white;
+    padding: 4px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+#status{
+    height: 32px;
+    width: 200px;
+    background-color: white;
+    padding: 4px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+.items{
+    width: 20%;
+    height: 20%;
+    background-color: teal;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px;
+    font-size: 24px;
+    gap: 10px;
+}
+
+.exame{
+    display: none;
 }
