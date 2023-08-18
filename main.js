@@ -123,6 +123,25 @@ function organizar(){
 
 }
 
-
-
 botaoOrganizar.addEventListener('click', organizar)
+
+/////////////////////
+///// exercício o
+
+const botaoMultiplicar = document.getElementById('multiplicar')
+
+function multiplicar(){
+
+    const v1 = Number(document.getElementById('valor1-30').value)
+    const v2 = Number(document.getElementById('valor2-30').value)
+    const produto = document.getElementById('produto')
+    const resultado = v1*v2
+
+    if(resultado > 30){
+        produto. textContent = resultado + ' > 30'
+    }else{
+        produto.textContent = 'Sem resultado pra você.'
+    }
+}
+
+botaoMultiplicar.addEventListener('click', multiplicar)
