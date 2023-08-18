@@ -145,3 +145,44 @@ function multiplicar(){
 }
 
 botaoMultiplicar.addEventListener('click', multiplicar)
+
+////////////////////////////
+/////exercicio g
+
+
+const botaoVerificar = document.getElementById('verificar')
+
+////fazer depois
+/*function verificar(){
+    const v1 = Number(document.getElementById('valorA').value)
+    const v2 = Number(document.getElementById('valorB').value)
+    const v3 = Number(document.getElementById('valorC').value)
+    const result = document.getElementById('result')
+    const result2 = document.getElementById('result2')
+    const result3 = document.getElementById('result3')
+
+    if(v1%2 == 0|| v1%3 == 0){
+        result.textContent = v1
+    }
+    if(v1%2 == 0|| v1%3 == 0){
+        result2.textContent = v2
+    }
+    if(v1%2 == 0|| v1%3 == 0){
+        result3.textContent = v3
+    }
+}
+*/
+
+function verificar (){
+
+    const v1 = Number(document.getElementById('valorA').value)
+    const resultado = v1%2
+    const result = document.getElementById('result')
+
+    if(resultado == 0){
+        result.textContent = 'par'
+    }else{
+        result.textContent = 'impar'
+    }
+}
+botaoVerificar.addEventListener('click', verificar) 
