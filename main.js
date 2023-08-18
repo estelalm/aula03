@@ -48,7 +48,7 @@ function media(){
     if(botaoMedia.textContent === 'Reavaliar'){
 
         const resultado = (n1+n2+n3+n4+n5)/5
-        mediaResultado.textContent = resultado
+        mediaResultado.textContent = `Média:   ${resultado}`
         
         if(resultado < 7){
             status.textContent = 'Reprovado'
@@ -60,7 +60,7 @@ function media(){
     }else{
 
         const resultado = (n1+n2+n3+n4)/4
-        mediaResultado.textContent = resultado
+        mediaResultado.textContent = `Média:   ${resultado}`
 
         if(resultado < 7){
             status.textContent = 'Em exame'
@@ -80,3 +80,49 @@ botaoMedia.addEventListener('click', media)
 //////////////////////////////////
 ////////questão f
 
+
+const botaoOrganizar = document.getElementById('organizar')
+
+function organizar(){
+    
+    const v1 = Number(document.getElementById('valor1').value)
+    const v2 = Number(document.getElementById('valor2').value)
+    const v3 = Number(document.getElementById('valor3').value)
+    
+    const maior = document.getElementById('valor-maior')
+    const meio = document.getElementById('valor-meio')
+    const menor = document.getElementById('valor-menor')
+
+    if(v1 > v2 && v1 > v3){
+        maior.textContent = v1
+    }else if(v1 > v2 && v1 <v3){
+        meio.textContent = v1
+    }else if(v1 > v3 && v1 <v2){
+        meio.textContent = v1
+    }else if(v1 < v2 && v1 <v3){
+        menor.textContent = v1
+    }
+    if(v2 > v1 && v2 > v3){
+        maior.textContent = v2
+    }else if(v2 > v1 && v2 <v3){
+        meio.textContent = v2
+    }else if(v2 > v3 && v2 <v1){
+        meio.textContent = v2
+    }else if(v2 < v1 && v2 <v3){
+        menor.textContent = v2
+    }
+    if(v3 > v1 && v3 > v2){
+        maior.textContent = v3
+    }else if(v3 > v1 && v3 <v2){
+        meio.textContent = v3
+    }else if(v3 > v2 && v3 <v1){
+        meio.textContent = v3
+    }else if(v3 < v1 && v3 <v2){
+        menor.textContent = v3
+    }
+
+}
+
+
+
+botaoOrganizar.addEventListener('click', organizar)
