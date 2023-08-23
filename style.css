@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+body{
+    background-color: rgb(143, 179, 177);
+}
 
 
 .container{
@@ -85,7 +88,7 @@ span{
 }
 .items{
     width: 20%;
-    height: 20%;
+    height: 50vh;
     background-color: teal;
     display: flex;
     flex-direction: column;
@@ -94,6 +97,7 @@ span{
     padding: 28px;
     font-size: 24px;
     gap: 10px;
+    box-shadow: teal 0 0 10px;
 }
 
 .exame{
